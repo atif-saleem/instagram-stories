@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: #2ec9d1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 350px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.storyian {
+  height: 100px;
+  width: 100%;
+  border-bottom: 2px solid red;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.story {
+  border-radius: 3px solid black;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  border: 3px solid black;
+  margin-right: 5px;
+}
+.storyian::-webkit-scrollbar {
+  display: none;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.full-screen {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  border-radius: 4px;
+  display: none;
+  background-position: center;
+  /* object-fit: cover; */
+  background-size: cover;
+}
